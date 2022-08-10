@@ -4,3 +4,5 @@ for i in range(1,n+1):
         continue
     if i % 2 == 0:
         print(i)
+
+# print continue
