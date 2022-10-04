@@ -1,26 +1,19 @@
 class father:
     def __init__(self):
         self.name = "father"
+        print(self)
+
+    def father_method(self):
+        print("this is self", self.name)
 
 
-class mother:
-    def __init__(self, eye_color):
-        self.name = "mohter"
-
-
-
-
-
-class son(father, mother):
-    def __init__(self,):
+class son(father):
+    def __init__(self, ):
         self.name = "ali"
         super().__init__()
 
         pass
 
 
-s1 = son()
-print(s1.__dict__)
-
-
-
+s = son()
+print(s.name)

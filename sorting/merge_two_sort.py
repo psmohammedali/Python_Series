@@ -1,7 +1,7 @@
 import selection_sort
 
 
-def merge_two_sort(list1,list2):
+def merge_two_sort(list1, list2):
     i = 0
     j = 0
     final_list = []
@@ -13,8 +13,6 @@ def merge_two_sort(list1,list2):
             final_list.append(list2[j])
             j = j + 1
 
-    # print(i)
-    # print(j)
     while i < len(list1):
         # print("list1")
         final_list.append(list1[i])
@@ -27,8 +25,9 @@ def merge_two_sort(list1,list2):
 
     return final_list
 
+
 if __name__ == "__main__":
     list1 = selection_sort.user_input()
     list2 = selection_sort.user_input()
-    final_list = merge_two_sort(list1,list2)
+    final_list = merge_two_sort(list1, list2)
     print(final_list)

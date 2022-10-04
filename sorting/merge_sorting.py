@@ -32,6 +32,7 @@ def merge_sort(my_list):
     return sort_list
 
 
-my_list = [10, 30, 45, 67, 1, 13, 40, 23]
+my_list = [3, 8, 2, 7, 1, 4, 5]
 ans = merge_sort(my_list)
-print(ans)  # It should get sorted at this time
+print(ans)
+# prints [1 ,2 ,3 ,4 ,5 ,7 ,8]
