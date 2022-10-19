@@ -77,7 +77,8 @@ def merge_ll(head1, head2):
 
 def merge_sort(head):
     if head is None or head.next is None:
-        return head
+        return hstacks
+        head
 
     mid_node = middle_node(head)
     head2 = mid_node.next
