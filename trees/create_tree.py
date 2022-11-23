@@ -154,7 +154,7 @@ def diameter_tree(root):
         return 0, 0
     left_height, left_max_diameter = diameter_tree(root.left)
     right_height, right_max_diameter = diameter_tree(root.right)
-    highest_diameter = 0
+
     my_height = max(left_height, right_height) + 1
     my_diameter = left_height + right_height
     if my_diameter >= left_max_diameter and my_diameter >= right_max_diameter:
